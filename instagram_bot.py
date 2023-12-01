@@ -92,7 +92,7 @@ def login_to_instagram():
                     element.send_keys(Keys.RETURN)
                     break
                 time.sleep(60)
-                copied = driver.find_elements(By.XPATH, '(//div[@class="sc-c4d9e300-0 eDJZhp __explicit-message"])')[-1]
+                copied = driver.find_elements(By.XPATH, '(//div[@class="sc-f14fee64-0 hkiZYr __explicit-message"])')[-1]
                 copied_text = copied.text
                 driver.switch_to.window(driver.window_handles[0])
                 time.sleep(5)
